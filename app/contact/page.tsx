@@ -47,7 +47,7 @@ export default function ContactPage() {
               Get In Touch
             </Badge>
             <h1 className="mb-6 text-4xl font-bold tracking-tight sm:text-5xl">
-              Let's Build Your Custom Drone Solution
+              Let&apos;s Build Your Custom Drone Solution
             </h1>
             <p className="text-lg text-muted-foreground md:text-xl">
               Ready to transform your operations with custom drone technology? 
@@ -65,7 +65,7 @@ export default function ContactPage() {
                 <CardHeader>
                   <CardTitle>Project Inquiry Form</CardTitle>
                   <CardDescription>
-                    Tell us about your project and we'll get back to you within 24 hours
+                    Tell us about your project and we&apos;ll get back to you within 24 hours
                   </CardDescription>
                 </CardHeader>
                 <CardContent>

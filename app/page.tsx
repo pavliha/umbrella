@@ -297,7 +297,7 @@ export default function Home() {
         <div className="container text-center">
           <h2 className="text-3xl font-bold mb-4">Ready to Transform Your Operations?</h2>
           <p className="text-lg mb-8 opacity-90 max-w-2xl mx-auto">
-            Let's discuss how our custom drone solutions can elevate your business to new heights.
+            Let&apos;s discuss how our custom drone solutions can elevate your business to new heights.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/contact">

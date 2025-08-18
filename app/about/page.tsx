@@ -121,9 +121,9 @@ export default function AboutPage() {
                 and UUVs (underwater vehicles).
               </p>
               <p className="text-muted-foreground mb-6">
-                Today, we're proud to have deployed over 500 autonomous unmanned systems worldwide, 
+                Today, we&apos;re proud to have deployed over 500 autonomous unmanned systems worldwide, 
                 serving defense, commercial, and research sectors with cutting-edge solutions that 
-                redefine what's possible in autonomous operations.
+                redefine what&apos;s possible in autonomous operations.
               </p>
               <div className="flex flex-wrap gap-4">
                 <div>
@@ -197,7 +197,7 @@ export default function AboutPage() {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4">Our Team</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Meet the experts behind Umbrella's innovative autonomous systems
+              Meet the experts behind Umbrella&apos;s innovative autonomous systems
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -261,7 +261,7 @@ export default function AboutPage() {
           <div className="bg-primary rounded-2xl p-8 md:p-12 text-center text-primary-foreground">
             <h2 className="text-3xl font-bold mb-4">Join Our Team</h2>
             <p className="text-lg mb-8 opacity-90 max-w-2xl mx-auto">
-              We're always looking for talented individuals passionate about autonomous systems 
+              We&apos;re always looking for talented individuals passionate about autonomous systems 
               and robotics innovation. Explore opportunities to shape the future with us.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

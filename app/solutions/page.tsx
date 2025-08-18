@@ -1,4 +1,4 @@
-import { Leaf, Shield, Package, Zap, Building, Heart, Trees, Waves, Camera, Map } from "lucide-react"
+import { Leaf, Shield, Package, Zap, Building, Heart, Trees, Waves, Map } from "lucide-react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
@@ -292,11 +292,11 @@ export default function SolutionsPage() {
       <section className="py-20 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-4">
-            Don't See Your Industry?
+            Don&apos;t See Your Industry?
           </h2>
           <p className="text-lg mb-8 opacity-90 max-w-2xl mx-auto">
             We specialize in creating custom solutions for unique challenges. 
-            Let's discuss how we can develop a drone solution specifically for your needs.
+            Let&apos;s discuss how we can develop a drone solution specifically for your needs.
           </p>
           <Link href="/contact">
             <Button size="lg" variant="secondary">
