@@ -1,10 +1,17 @@
 import Link from "next/link"
 import { ArrowRight, CheckCircle, Cpu, Settings, Shield, Zap, Plane, Camera, Map } from "lucide-react"
+import homeContent from "@/content/home.json"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 
 export default function Home() {
+  const headlineText = homeContent.headline
+  const parts = typeof headlineText === "string" ? headlineText.split(" from ") : []
+  const hasSecondLine = parts.length > 1
+  const firstLine = hasSecondLine ? parts[0] : headlineText
+  const secondLine = hasSecondLine ? ("from " + parts.slice(1).join(" from ")) : ""
+
   return (
     <>
       <section className="relative overflow-hidden bg-gradient-to-b from-background to-muted/50 py-20 md:py-32">
@@ -13,12 +20,18 @@ export default function Home() {
             <Badge className="mb-4 inline-block" variant="secondary">
               Autonomous Unmanned Systems Engineering
             </Badge>
-            <h1 className="mb-6 text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl bg-gradient-to-r from-sky-400 via-blue-500 to-indigo-500 bg-clip-text text-transparent">
-              Umbrella Technology from blue print to sky
+            <h1 className={`mb-6 text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl ${homeContent.headlineClass}`}>
+              {hasSecondLine ? (
+                <>
+                  <span>{firstLine}</span>
+                  <span className="block">{secondLine}</span>
+                </>
+              ) : (
+                <>{headlineText}</>
+              )}
             </h1>
             <p className="mb-8 text-lg text-muted-foreground md:text-xl max-w-3xl mx-auto">
-              We engineer cutting-edge autonomous unmanned systems for air, land, and sea. 
-              From UAVs to UGVs, USVs, and UUVs, our custom solutions revolutionize operations across industries.
+              {homeContent.tagline}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Link href="/contact">
