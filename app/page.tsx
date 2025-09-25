@@ -14,8 +14,7 @@ export default function Home() {
               Autonomous Unmanned Systems Engineering
             </Badge>
             <h1 className="mb-6 text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
-              Engineering the Future of
-              <span className="bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent"> Autonomous Systems</span>
+              Umbrella Technology from blue print to sky
             </h1>
             <p className="mb-8 text-lg text-muted-foreground md:text-xl max-w-3xl mx-auto">
               We engineer cutting-edge autonomous unmanned systems for air, land, and sea. 
