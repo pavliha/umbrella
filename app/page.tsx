@@ -37,6 +37,7 @@ export default function Home() {
               ) : (
                 <>{headlineText}</>
               )}
+              {" +"}
             </h1>
             <p className="mb-8 text-lg text-muted-foreground md:text-xl max-w-3xl mx-auto">
               {homeContent.tagline}
