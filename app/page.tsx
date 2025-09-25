@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 import { ArrowRight, CheckCircle, Cpu, Settings, Shield, Zap, Plane, Camera, Map } from "lucide-react"
 import homeContent from "@/content/home.json"
 import { Button } from "@/components/ui/button"
@@ -39,6 +40,18 @@ export default function Home() {
               )}
               {" +"}
             </h1>
+            {homeContent.image ? (
+              <div className="mt-6 flex justify-center">
+                <Image
+                  src={homeContent.image}
+                  alt="Hero"
+                  width={1200}
+                  height={600}
+                  className="rounded-lg shadow-md max-w-full h-auto"
+                  priority
+                />
+              </div>
+            ) : null}
             <p className="mb-8 text-lg text-muted-foreground md:text-xl max-w-3xl mx-auto">
               {homeContent.tagline}
             </p>
