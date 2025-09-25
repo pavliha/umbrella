@@ -13,7 +13,7 @@ export default function Home() {
             <Badge className="mb-4 inline-block" variant="secondary">
               Autonomous Unmanned Systems Engineering
             </Badge>
-            <h1 className="mb-6 text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl text-sky-400">
+            <h1 className="mb-6 text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl bg-gradient-to-r from-sky-400 via-blue-500 to-indigo-500 bg-clip-text text-transparent">
               Umbrella Technology from blue print to sky
             </h1>
             <p className="mb-8 text-lg text-muted-foreground md:text-xl max-w-3xl mx-auto">
