@@ -7,10 +7,17 @@ import { Badge } from "@/components/ui/badge"
 
 export default function Home() {
   const headlineText = homeContent.headline
-  const parts = typeof headlineText === "string" ? headlineText.split(" from ") : []
-  const hasSecondLine = parts.length > 1
-  const firstLine = hasSecondLine ? parts[0] : headlineText
-  const secondLine = hasSecondLine ? ("from " + parts.slice(1).join(" from ")) : ""
+  const lower = typeof headlineText === "string" ? headlineText.toLowerCase() : ""
+  let splitIndex = -1
+  if (typeof headlineText === "string") {
+    splitIndex = lower.indexOf(" from ")
+    if (splitIndex === -1) {
+      splitIndex = lower.indexOf(" frome ")
+    }
+  }
+  const hasSecondLine = splitIndex >= 0
+  const firstLine = hasSecondLine ? headlineText.slice(0, splitIndex).trim() : headlineText
+  const secondLine = hasSecondLine ? headlineText.slice(splitIndex).trim() : ""
 
   return (
     <>
