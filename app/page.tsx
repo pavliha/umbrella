@@ -31,7 +31,8 @@ export default function Home() {
               {hasSecondLine ? (
                 <>
                   <span>{firstLine}</span>
-                  <span className="block">{secondLine}</span>
+                  <br />
+                  <span>{secondLine}</span>
                 </>
               ) : (
                 <>{headlineText}</>
