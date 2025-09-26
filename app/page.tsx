@@ -1,5 +1,5 @@
 import Link from "next/link"
-import Image from "next/image"
+// Using standard img to ensure compatibility on all hosts
 import { ArrowRight, CheckCircle, Cpu, Settings, Shield, Zap, Plane, Camera, Map } from "lucide-react"
 import homeContent from "@/content/home.json"
 import { Button } from "@/components/ui/button"
@@ -42,13 +42,11 @@ export default function Home() {
             </h1>
             {homeContent.image ? (
               <div className="mt-6 flex justify-center">
-                <Image
+                <img
                   src={homeContent.image}
                   alt="Hero"
-                  width={1200}
-                  height={600}
                   className="rounded-lg shadow-md max-w-full h-auto"
-                  priority
+                  loading="eager"
                 />
               </div>
             ) : null}
